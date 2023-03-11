@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="name">HOME</h3>
+                <div class="scoreBox" id="homeScore">0</div>
+                <div class="btn-div" id="homePoints">
+                    <button class="btn" id="home1Pt" onclick="incrementScore('home', 1)">+1</button>
+                    <button class="btn" id="home2Pt" onclick="incrementScore('home', 2)">+2</button>
+                    <button class="btn" id="home3Pt" onclick="incrementScore('home', 3)">+3</button>
+                </div>
+            </div>
+            <div class="">
+                <h3 class="name">CLOCK</h3>
+                <div class="timer">15:00</div>
+                
+                <div class="btn-div" id="guestPoints">
+                    <button class="btn reset-btn" id="guest1Pt" onclick="resetGame()">New Game</button>
+                </div>
+            </div>
+            <div>
+                <h3 class="name">GUEST</h3>
+                <div class="scoreBox" id="guestScore">0</div>
+                <div class="btn-div" id="guestPoints">
+                    <button class="btn" id="guest1Pt" onclick="incrementScore('guest', 1)">+1</button>
+                    <button class="btn" id="guest2Pt" onclick="incrementScore('guest', 2)">+2</button>
+                    <button class="btn" id="guest3Pt" onclick="incrementScore('guest', 3)">+3</button>
+                </div>
+            </div>
+            
+        </div>
+       
+        <script src="index.js"></script>
+    </body>
+</html>

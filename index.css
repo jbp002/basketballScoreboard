@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    height: 385px;
+    background-color: #1b244a;
+    margin: 50px auto;
+    text-align: center;
+    
+}
+
+.scorebox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 155px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #080001;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #F94F6D;
+    font-size: 90px;
+    
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #080001;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #F94F6D;
+    font-size: 90px;
+}
+
+.btn {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: #1b244a;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    margin-top: 26px;
+}
+
+.reset-btn {
+    width: 100px;
+    margin: auto;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    font-size: 36px;
+    padding: 0 0;
+    margin: 68 0 26 0;
+}
