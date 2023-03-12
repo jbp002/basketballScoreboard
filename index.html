@@ -21,10 +21,11 @@
             </div>
             <div class="">
                 <h3 class="name">CLOCK</h3>
-                <div class="timer">15:00</div>
-                
+                <div class="timer"><span id="timer__minutes">15</span>:<span id="timer__seconds">00</span></div>
                 <div class="btn-div" id="guestPoints">
-                    <button class="btn reset-btn" id="guest1Pt" onclick="resetGame()">New Game</button>
+                    <button class="btn reset-btn" onclick="start()">Start</button>
+                    <button class="btn reset-btn" onclick="stop()">Stop</button>
+                    <button class="btn reset-btn" onclick="resetGame()">New Game</button>
                 </div>
             </div>
             <div>
