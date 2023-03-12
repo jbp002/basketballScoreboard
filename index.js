@@ -35,7 +35,9 @@ function timer() {
     let min = document.getElementById("timer__minutes")
     let seconds = sec.textContent
     let minutes = min.textContent
-    
+    if (running != true){
+        return
+    }
     seconds--
 
     seconds = correctSeconds(seconds)
@@ -49,7 +51,7 @@ function timer() {
     sec.textContent = seconds
     min.textContent = minutes
     
-    if(running == true){setTimeout(timer, 1000)}
+    setTimeout(timer, 1000)
 }
 
 function correctSeconds(seconds){
